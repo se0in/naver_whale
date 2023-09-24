@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="seoin" />
+  <meta name="description"
+    content="Naver Whale, login page application, source https://whalespace.io/, https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+  <title>JOIN US</title>
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/join_2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./js/join_2.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="question_wrap">
+      <div class="question">
+        <span>?</span>
+      </div>
+      <div class="pop">
+        <h2>빠른 이동</h2>
+        <ul>
+          <li><a href="./login.html">로그인</a></li>
+          <li><a href="./join_1.html">회원가입1 (약관)</a></li>
+          <li><a href="./join_2.html">회원가입2 (입력)</a></li>
+          <li><a href="./index.html">메인</a></li>
+        </ul>
+      </div>
+    </div>
+    <header class="header">
+      <a href="./index.html" class="logo">
+        <h1 class="blind">NAVER whale</h1>
+        <img src="./img/naver_logo.png" alt="NAVER whale">
+      </a>
+    </header>
+    <div class="obj_wrap">
+      <img src="./img/join/objec_1.png" alt="">
+      <img src="./img/join/objec_3.png" alt="">
+      <img src="./img/join/objec_4.png" alt="">
+      <img src="./img/join/objec_5.png" alt="">
+    </div>
+    <!-- 컨텐츠 -->
+    <div class="container">
+      <h2>회원가입</h2>
+      <form action="./index.html" method="post">
+        <div class="join_wrap">
+          <div class="form_list">
+            <div class="form_item id flex justify_bet align_i-c">
+              <input type="text" placeholder="아이디">
+              <p>@naver.com</p>
+            </div>
+            <div class="form_item pw flex justify_bet align_i-c">
+              <input type="password" placeholder="비밀번호" id="pw">
+                <p class="show">SHOW</p>
+            </div>
+            <div class="form_item lost">
+              <input type="text" placeholder="[선택] 비밀번호 분실 시 확인용 이메일">
+            </div>
+          </div>
+          <div class="form_list">
+            <div class="form_item name">
+              <input type="text" placeholder="이름">
+            </div>
+            <div class="form_item birth">
+              <input type="number" placeholder="생년월일 8자리">
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="회원가입">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

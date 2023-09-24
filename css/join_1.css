@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+body {
+  background: url(../img/join/bg.png) no-repeat center ;
+  background-size: 100% 100%;
+  font-size: 16px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* checkbox design */
+.checkbox_group input[type="checkbox"] {
+  display: none;
+}
+.checkbox_group input[type="checkbox"] + label::before {
+  content: '✓';
+  width: 20px;
+  height: 20px;
+  color: #ccc;
+  background-color: #fff;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 18px;
+  top: 0;
+  left: -28px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+} 
+.checkbox_group input[type="checkbox"] + label {
+  margin-left: 28px;
+  position: relative;
+}
+.checkbox_group input[type="checkbox"]:checked + label::before {
+  content: '✓';
+  position: absolute;
+  top: 0;
+  left: -28px;
+  border: none;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #7b5bf9;
+}
+
+/* 회원가입 버튼 */
+.container input[type=submit] {
+  width: 100%;
+  background: #ccc;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 12px 0 13px;
+}
+.container input[type=submit].on {
+  background: linear-gradient(90deg, #42cfc7 25%, #7b5bf9 70%);
+  cursor: pointer;
+}
+.terms_text::-webkit-scrollbar { /* 스크롤바 전체 */
+  width: 5px;
+}
+.terms_text::-webkit-scrollbar-thumb {
+  background: #ccc; /* 스크롤바의 색상 */
+  border-radius: 20px;
+}
+.terms_text::-webkit-scrollbar-track {
+  background: rgba(68, 68, 68, 0.1);
+  border-radius: 0 6px 6px 0;  /*스크롤바 뒷 배경 색상*/
+}
+
+/* layout */
+#wrap {
+  width: 100%;
+  overflow-x: hidden;
+  /* height: 100vh; */
+}
+
+/* header */
+.header {
+  padding: 20px 0;
+  width: 100%;
+}
+.header a.logo {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 200px;
+  padding: 0 30px;
+}
+.header a.logo img {
+  width: 100%;
+}
+/* obj */
+.obj_wrap {
+  position: relative;
+  width: 100%;
+  
+}
+.obj_wrap img {
+  position: absolute;
+  z-index: -1;
+  animation: 5s ease 0s infinite normal none running obj_animation;
+}
+.obj_wrap img:nth-child(1) {
+  top: -10px;
+  left: 10%;
+  filter: blur(2px);
+}
+.obj_wrap img:nth-child(2) {
+  right: 100px;
+  top: 1000px;
+  width: 100px;
+  filter: blur(15px);
+}
+.obj_wrap img:nth-child(3) {
+  top: 500px;
+  right: 30%;
+  filter: blur(10px);
+}
+.obj_wrap img:nth-child(4) {
+  left: 10%;
+  top: 840px;
+  width: 100px;
+}
+.obj_wrap img:nth-child(5) {
+  top: -200px;
+  right: 5%;
+  width: 200px;
+}
+
+/* content */
+.container {
+  border-radius: 8px;
+  width: 100%;
+  padding-top: 100px;
+  background-color: #ffffff;
+  padding: 25px 18px;
+  box-sizing: border-box;
+  border: 1px solid #ebebeb;
+  width: calc(100% - 60px);/* 모바일 사이즈 */
+  margin: 0 auto 30px;
+}
+.container h2 {
+  text-align: center;
+  margin: 10px 0 50px;
+  font-weight: 300;
+}
+.container form .checkbox_group {
+  padding-bottom: 30px;
+}
+.container form .checkbox_group .checkAll .checkAllInput label .allTitle{
+  font-size: 18px;
+  cursor: pointer;
+}
+.container form .checkbox_group .checkAll p {
+  margin-left: 30px;
+  margin-top: 10px;
+  color: #999;
+}
+.container form .checkbox_group .terms {
+  margin-top: 40px;
+}
+.container form .checkbox_group .terms .termsInput label span {
+  font-size: 17px;
+  cursor: pointer;
+}
+.container form .checkbox_group .terms .termsInput label span em {
+  font-style: normal;
+  margin-right: 4px;
+  font-size: 15px;
+}
+.container form .checkbox_group .terms .termsInput label span em.essential_text {
+  color: #7b5bf9;
+}
+.container form .checkbox_group .terms .termsInput label span em.choice_text {
+  color: #999;
+}
+.container form .checkbox_group .terms .terms_text {
+  margin-left: 30px;
+  margin-top: 10px;
+  padding: 18px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  height: 100px;
+  overflow-y: scroll;
+}
+.container form .checkbox_group .terms .terms_text.short_text {
+  height: 82px;
+  overflow-y: auto;
+}
+.container form .checkbox_group .terms .terms_text h3 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+.container form .checkbox_group .terms .terms_text p {
+  line-height: 22px;
+  color: #747474;
+}
+
+/* 미디어쿼리 웹사이즈*/
+@media (min-width: 767px) {
+  .header {  
+    padding: 50px 0;
+  }
+  .container {
+    width: 540px;
+  }
+}

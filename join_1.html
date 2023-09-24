@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="seoin" />
+  <meta name="description"
+    content="Naver Whale, login page application, source https://whalespace.io/, https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+  <title>JOIN US</title>
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/join_1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./js/join_1.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header class="header">
+      <a href="./index.html" class="logo">
+        <h1 class="blind">NAVER whale</h1>
+        <img src="./img/naver_logo.png" alt="NAVER whale">
+      </a>
+    </header>
+    <div class="obj_wrap">
+      <img src="./img/join/objec_1.png" alt="">
+      <img src="./img/join/objec_2.png" alt="">
+      <img src="./img/join/objec_3.png" alt="">
+      <img src="./img/join/objec_4.png" alt="">
+      <img src="./img/join/objec_5.png" alt="">
+    </div>
+    <div class="question_wrap">
+      <div class="question">
+        <span>?</span>
+      </div>
+      <div class="pop">
+        <h2>빠른 이동</h2>
+        <ul>
+          <li><a href="./login.html">로그인</a></li>
+          <li><a href="./join_1.html">회원가입1 (약관)</a></li>
+          <li><a href="./join_2.html">회원가입2 (입력)</a></li>
+          <li><a href="./index.html">메인</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 컨텐츠 -->
+    <div class="container">
+      <h2>회원가입</h2>
+      <form action="./join_2.html" method="post">
+        <div class="checkbox_group">
+          <!-- 전체선택 -->
+          <div class="checkAll">
+            <div class="checkAllInput">
+              <input type="checkbox" id="check_all">
+              <label for="check_all"><span class="allTitle">전체 동의하기</span></label>
+            </div>
+            <p>실명 인증된 아이디로 가입, 위치기반서비스 이용약관(선택), 이벤트・혜택 정보 수신(선택) 동의를 포함합니다.</p>
+          </div>
+          <!-- 필수 -->
+          <div class="terms">
+            <div class="termsInput">
+              <input type="checkbox" id="check_1" class="normal essential">
+              <label for="check_1"><span><em class="essential_text">[필수]</em>네이버 이용약관</span></label>
+            </div>
+            <div class="terms_text">
+              <h3>여러분을 환영합니다.</h3>
+              <p>네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를
+                이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.</p>
+            </div>
+          </div>
+          <div class="terms">
+            <div class="termsInput">
+              <input type="checkbox" id="check_2" class="normal essential">
+              <label for="check_2"><span><em class="essential_text">[필수]</em>개인정보 수집 및 이용</span></label>
+            </div>
+            <div class="terms_text">
+              <p>개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에
+                관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.<br>
+                <br>
+                1. 수집하는 개인정보
+                이용자는 회원가입을 하지 않아도 정보 검색, 뉴스 보기 등 대부분의 네이버 서비스를 회원과 동일하게 이용할 수 있습니다. 이용자가 메일, 캘린더, 카페, 블로그 등과 같이 개인화 혹은
+                회원제 서비스를 이용하기 위해 회원가입을 할 경우, 네이버는 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- 선택 -->
+          <div class="terms">
+            <div class="termsInput">
+              <input type="checkbox" id="check_3" class="normal">
+              <label for="check_3"><span><em class="choice_text">[선택]</em>실명 인증된 아이디로 가입</span></label>
+            </div>
+            <div class="terms_text short_text">
+              <p>실명 인증된 아이디로 가입하시면 본인인증이 필요한 서비스(네이버 페이, 쇼핑, 멤버십 등)를 가입 후 바로 이용하실 수 있어요.
+              </p>
+            </div>
+          </div>
+          <div class="terms">
+            <div class="termsInput">
+              <input type="checkbox" id="check_4" class="normal">
+              <label for="check_4"><span><em class="choice_text">[선택]</em>위치기반서비스 이용약관</span></label>
+            </div>
+            <div class="terms_text">
+              <p>위치기반서비스 이용약관에 동의하시면, 위치를 활용한 광고 정보 수신 등을 포함하는 네이버 위치기반 서비스를 이용할 수 있습니다.<br>
+                <br>
+                <em>제 1 조 (목적)</em>
+                이 약관은 네이버 주식회사 (이하 “회사”)가 제공하는 위치기반서비스와 관련하여 회사와 개인위치정보주체와의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
+              </p>
+            </div>
+          </div>
+          <div class="terms">
+            <div class="termsInput">
+              <input type="checkbox" id="check_5" class="normal">
+              <label for="check_5"><span><em class="choice_text">[선택]</em>이벤트・혜택 정보 수신</span></label>
+            </div>
+            <div class="terms_text">
+              <p>
+                네이버 서비스 및 제휴 이벤트・혜택 등의 정보를 휴대전화(네이버앱 알림 또는 문자), 이메일로 받을 수 있습니다. 일부 서비스(별개의 회원 체계 운영, 네이버 가입 후 추가 가입하는
+                서비스 등)의 경우, 수신에 대해 별도로 안내드리며 동의를 구합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="다음" disabled>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

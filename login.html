@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="seoin" />
+  <meta name="description" content="Naver Whale, login page application, source https://whalespace.io/, https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+  <title>LOGIN</title>
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./js/login.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="question_wrap">
+      <div class="question">
+        <span>?</span>
+      </div>
+      <div class="pop">
+        <h2>빠른 이동</h2>
+        <ul>
+          <li><a href="./login.html">로그인</a></li>
+          <li><a href="./join_1.html">회원가입1 (약관)</a></li>
+          <li><a href="./join_2.html">회원가입2 (입력)</a></li>
+          <li><a href="./index.html">메인</a></li>
+        </ul>
+      </div>
+    </div> 
+    <div class="wrap_inner">
+      <div class="obj_wrap">
+        <div class="bg_obj1"><img src="./img/login/obj1.png" alt=""></div>
+        <div class="bg_obj2"><img src="./img/login/obj2.png" alt=""></div>
+        <div class="bg_obj3"><img src="./img/login/obj3.png" alt=""></div>
+        <div class="bg_obj4"><img src="./img/login/obj4.png" alt=""></div>
+        <div class="bg_obj5"><img src="./img/login/obj5.png" alt=""></div>
+        <div class="bg_obj6"><img src="./img/login/obj6.png" alt=""></div>
+      </div>
+      <header class="header">
+        <a href="./index.html" class="logo">
+          <h1 class="blind">NAVER whale</h1>
+          <img src="./img/naver_logo.png" alt="NAVER whale">
+        </a>
+      </header>
+      <div class="content">
+        <div class="login_box">
+          <!-- id 로그인 탭 타이틀 공통 클래스 : login_box__title-->
+          <div class="login_box__id_title login_box__title tabOn">
+            <sapn class="menu_text"><span class="text">ID 로그인</span></sapn>
+          </div>
+          <!-- id 로그인 입력창 박스 공통 클래스 : login_box_common-->
+          <div class="login_box__id_box login_box_common contentOn">
+            <form action="./index.html" method="post">
+              <div class="input_wrap">
+                <div class="id_input login_input_wrap flex align_i-c">
+                  <p class="id_input__icon"><span class="blind">아이디</span></p>
+                  <div class="id_input_wrap flex align_i-c justify_bet">
+                    <input type="text" placeholder="아이디" id="id" required>
+                    <span class="x_button"></span>
+                  </div>
+                </div>
+                <div class="pw_input login_input_wrap flex align_i-c">
+                  <p class="pw_input__icon"><span class="blind">비밀번호</span></p>
+                  <div class="pw_input_wrap flex align_i-c justify_bet">
+                    <input type="password" placeholder="비밀번호" id="pw" required>
+                    <p class="button_wrap flex">
+                      <span class="show">SHOW</span>
+                      <span class="x_button"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="add flex justify_bet">
+                <div class="keep"><input type="checkbox" id="keep"><label for="keep" class="keep_text">로그인 상태 유지</label>
+                </div>
+                <div class="security">
+                  <label>
+                    <span>IP보안</span>
+                    <input role="switch" type="checkbox">
+                  </label>
+                </div>
+              </div>
+              <div class="login_button"><input type="submit" value="로그인"></div>
+            </form>
+          </div>
+          <!-- 일회용번호 탭 타이틀 공통 클래스 : login_box__title-->
+          <div class="login_box__number_title login_box__title">
+            <span class="menu_text"><span class="text">일회용 번호</span></span>
+          </div>
+          <!-- 일회용번호 입력창 박스 공통 클래스 : login_box_common-->
+          <div class="login_box__number_box login_box_common">
+            <div class="number_text">
+              <p>네이버앱의 <span>메뉴 > 설정<em></em> > 로그인 아이디 관리 ><br> 더보기 > 일회용 로그인 번호</span>에 보이는 번호를 입력해 주세요</p>
+            </div>
+            <div class="number_button_wrap">
+              <form action="./index.html" method="post">
+                <div class="number_input"><input type="number" placeholder="번호를 입력하세요."></div>
+                <div class="login_button"><input type="submit" value="로그인"></div>
+              </form>
+            </div>
+          </div>
+          <!-- QR 탭 타이틀 공통 클래스 : login_box__title-->
+          <div class="login_box__qr_title login_box__title">
+            <span class="menu_text"><span class="text">QR코드</span></span>
+            <!-- QR코드 탭 상단 안전 안내 버튼 -->
+            <div class="login_box__qr_inform">
+              <span class="login_box__qr_inform_text">PC방 등 공용 PC라면 QR코드 로그인이 더 안전해요</span>
+              <span class="login_box__qr_inform_x"></span>
+            </div>
+          </div>
+          <!-- qr 입력창 박스 공통 클래스 : login_box_common-->
+          <div class="login_box__qr_box login_box_common">
+            <div class="qr_img_wrap">
+              <div class="qr_img">
+                <img src="./img/login/qr_code.png" alt="">
+                <div class="qr_time">
+                  <p>남은 시간</p>
+                  <p class="time" id="timer">시간</p>
+                </div>
+              </div>
+            </div>
+            <div class="qr_text_wrap">
+              <p>공용 네트워크, 공용 PC라면 안전을 위해<br>
+                QR코드로 로그인해주세요.</p>
+              <p>네이버 앱<em></em> > 렌즈<em></em> 를 눌러 QR코드를 스캔하여<br>
+                보이는 숫자 중 <span class="random">43</span>를 선택하면 로그인 됩니다. </p>
+            </div>
+          </div>
+        </div>
+        <!-- 찾기 -->
+        <ul class="find">
+          <li><a href="javascript:void(0)">비밀번호 찾기</a></li>
+          <li><a href="javascript:void(0)">아이디 찾기</a></li>
+          <li><a href="./join_1.html" class="join">회원가입</a></li>
+        </ul>
+      </div><!-- 로그인 content div 닫는 태그 -->
+      <footer class="footer">
+        <ul class="footer_list">
+          <li><a href="javascript:void(0)">이용약관</a></li>
+          <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+          <li><a href="javascript:void(0)">책임의 한계와 법적고지</a></li>
+          <li><a href="javascript:void(0)">회원정보 고객센터</a></li>
+        </ul>
+        <div class="copyright">
+          <a class="footer_logo" href="./index.html"><img src="./img/naver_logo.png" alt="NAVER whale"></a>
+          <p><span>&copy; Naver Wale Corp.</span> All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
