@@ -53,7 +53,7 @@ body {
 }
 
 /* 회원가입 버튼 */
-.container input[type=submit] {
+.container input[type=button] {
   width: 100%;
   background: #ccc;
   font-size: 18px;
@@ -65,7 +65,7 @@ body {
   font-weight: bold;
   padding: 12px 0 13px;
 }
-.container input[type=submit].on {
+.container input[type=button].on {
   background: linear-gradient(90deg, #42cfc7 25%, #7b5bf9 70%);
   cursor: pointer;
 }

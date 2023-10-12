@@ -8,6 +8,5 @@ $(document).ready(function(){
       $($(this)).text("SHOW");
     }
     });
-
 }); /* 제이쿼리 마침 */
 

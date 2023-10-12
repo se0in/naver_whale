@@ -53,7 +53,10 @@
           </div>
           <!-- id 로그인 입력창 박스 공통 클래스 : login_box_common-->
           <div class="login_box__id_box login_box_common contentOn">
-            <form action="./index.html" method="post">
+
+            <!-- 실서버 X 폼 속성 삭제 -->
+            <!-- <form action="./index.html" method="post"> --> 
+            <form>
               <div class="input_wrap">
                 <div class="id_input login_input_wrap flex align_i-c">
                   <p class="id_input__icon"><span class="blind">아이디</span></p>
@@ -83,7 +86,12 @@
                   </label>
                 </div>
               </div>
-              <div class="login_button"><input type="submit" value="로그인"></div>
+                <div class="login_button">
+                  <!-- form action 실서버X 오류 a태그로 처리 -->
+                  <!-- <div class="login_button"><input type="submit" value="로그인"></div> -->
+                  <a href="./index.html"><input type="button" value="로그인"></a>
+                </div>
+              </a>
             </form>
           </div>
           <!-- 일회용번호 탭 타이틀 공통 클래스 : login_box__title-->
@@ -98,7 +106,11 @@
             <div class="number_button_wrap">
               <form action="" method="post">
                 <div class="number_input"><input type="number" placeholder="번호를 입력하세요."></div>
-                <div class="login_button"><input type="submit" value="로그인"></div>
+                <div class="login_button">
+                  <!-- form action 실서버X 오류 a태그로 처리 -->
+                  <!-- <div class="login_button"><input type="submit" value="로그인"></div> -->
+                  <a href="./index.html"><input type="button" value="로그인"></a>
+                </div>
               </form>
             </div>
           </div>

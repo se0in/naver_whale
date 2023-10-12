@@ -112,7 +112,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 15px;
   cursor: pointer;
 }
-.container input[type=submit] {
+.container input[type=button] {
   width: 100%;
   font-size: 18px;
   color: #fff;

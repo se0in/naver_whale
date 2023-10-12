@@ -43,9 +43,11 @@ $(document).ready(function(){
     });
 
     if (allChecked) {
-      $("input[type='submit']").removeAttr("disabled").addClass('on');
+      $("input[type='button']").removeAttr("disabled").addClass('on');
+      $("input[type='button']").parent('a').attr("href","./join_2.html");
     } else {
-      $("input[type='submit']").attr("disabled", "disabled").removeClass('on');
+      $("input[type='button']").attr("disabled", "disabled").removeClass('on');
+      $("input[type='button']").parent('a').attr("href","javascript:void(0)");
     }
   });
   $(".essential").trigger("change"); // 초기 상태 설정
