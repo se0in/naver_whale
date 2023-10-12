@@ -8,9 +8,9 @@ Naver를 참고하여 새로운 로그인, 회원가입, 메인페이지 작업
 - 새롭게 배운 form 태그를 사용한 로그인, 회원가입 페이지 + 메인 작업물
 <br>
 - 참고 사이트
-    - 네이버 웨일 : https://whale.naver.com/ko/  
-    - 웨일스페이스 : https://whalespace.io  
-    - 네이버 로그인 : https://nid.naver.com/nidlogin.login?mode=form&rl=https://www.naver.com/  
+    1. 네이버 웨일 : https://whale.naver.com/ko/  
+    2. 웨일스페이스 : https://whalespace.io  
+    3. 네이버 로그인 : https://nid.naver.com/nidlogin.login?mode=form&rl=https://www.naver.com/  
 
 ### 📅 작업 기간
 - 2023년 8월 (2주)
