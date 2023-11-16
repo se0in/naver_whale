@@ -1,5 +1,5 @@
 # Naver Whale
-✨ 링크 : https://seoin-naver-whale.netlify.app ✨
+✨ 링크 : https://seoin-naver-whale.netlify.app ✨  
 <br>
 Naver를 참고하여 새로운 로그인, 회원가입, 메인페이지 작업
 
